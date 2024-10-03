@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e1a3ff;
+}
+
+h1 {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 20px;
+}
+
+p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.twoNames {
+    font-family: "Shrikhand", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 38.5px;
+    color: #EB4445;
+}
+
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  #heart::before, #heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background: #EA202E;
+  }
+  
+  #heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  #heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+  .name {
+    height: 30px;
+    width: 250px;
+    font-size: 20px;
+    border: 2px solid #B860EB;
+    color: #8124EB;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+  }
+
+  #percentage {
+    text-align: center;
+    margin-right: 5vh;
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    background-color: #f09c7a;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #f0305c;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+@media (max-width: 651px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
